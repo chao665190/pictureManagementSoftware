@@ -1,10 +1,6 @@
 # group-project-chao-ling
 
-This project is from Chao Wang and Li Ling.
-
-
-
-This application is made by Javafx, the function that we made for this project is:
+This project is from Chao Wang and Li Ling. This software is made by Javafx, the functions that we made for this project are:
 
 1.Develop GUI to allow users to upload image from their own computer.
 
@@ -16,6 +12,7 @@ This application is made by Javafx, the function that we made for this project i
 
 
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 The diagram of this project:
 
