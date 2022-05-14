@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chaowang_liling.picturemangement.SaveController">
+    <children>
+        <Label layoutX="112.0" layoutY="45.0" prefHeight="45.0" prefWidth="405.0" text="Please Select Image Format :" textFill="#1d5986">
+            <font>
+                <Font name="BM DoHyeon OTF" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="197.0" layoutY="178.0" prefHeight="45.0" prefWidth="159.0" text="Enter a name :" textFill="#1e5986">
+            <font>
+                <Font name="BM HANNA 11yrs old OTF" size="23.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="formats" layoutX="180.0" layoutY="113.0" onMouseClicked="#choiceFormat" opacity="0.66" prefHeight="36.0" prefWidth="208.0">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value=".jpeg" />
+                    <String fx:value=".png" />
+                    <String fx:value=".jpg" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <TextField fx:id="fileName" layoutX="180.0" layoutY="235.0" onAction="#fileName" prefHeight="36.0" prefWidth="208.0" />
+        <Button layoutX="43.0" layoutY="301.0" mnemonicParsing="false" onAction="#buttonAction" prefHeight="79.0" prefWidth="482.0" text="Save" textFill="#04a104">
+            <font>
+                <Font name="American Typewriter" size="42.0" />
+            </font>
+        </Button>
+    </children>
+</Pane>

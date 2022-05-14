@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chaowang_liling.picturemangement.EditController">
+    <top>
+        <Pane prefHeight="60.0" prefWidth="738.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="235.0" layoutY="5.0" prefHeight="50.0" prefWidth="282.0" text="Special Effects " textAlignment="CENTER" textFill="#e40536">
+                    <font>
+                        <Font name="BM DoHyeon OTF" size="30.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </top>
+    <right>
+        <Pane prefHeight="315.0" prefWidth="353.0" BorderPane.alignment="CENTER">
+            <children>
+                <ChoiceBox fx:id="choice_box" layoutX="126.0" layoutY="123.0" nodeOrientation="LEFT_TO_RIGHT" onMouseClicked="#clickChoices" prefHeight="39.0" prefWidth="179.0">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Lighting" />
+                            <String fx:value="BoxBlur" />
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+            </children>
+        </Pane>
+    </right>
+    <center>
+        <Pane fx:id="pane" prefHeight="486.0" prefWidth="457.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fx:id="iv" fitHeight="367.0" fitWidth="248.0" layoutX="131.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+                <Button layoutX="56.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#saveImage" prefHeight="47.0" prefWidth="586.0" text="NEXT STEP" textFill="#bc0c0c">
+                    <font>
+                        <Font name="BM HANNA 11yrs old OTF" size="26.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>

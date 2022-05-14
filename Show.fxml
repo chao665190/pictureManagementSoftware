@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chaowang_liling.picturemangement.ShowController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="608.0" prefWidth="711.0">
+            <children>
+                <Pane fx:id="pane" layoutX="1.0" layoutY="-6.0" prefHeight="473.0" prefWidth="712.0">
+                    <children>
+                        <TextArea fx:id="textArea" layoutX="349.0" layoutY="258.0" prefHeight="201.0" prefWidth="319.0">
+                            <font>
+                                <Font name="BM JUA OTF" size="25.0" />
+                            </font></TextArea>
+                        <Label fx:id="labelPane2" layoutX="427.0" layoutY="183.0" prefHeight="72.0" prefWidth="200.0" text="Image Properties" textFill="#e41f1f">
+                            <font>
+                                <Font name="BM DoHyeon OTF" size="21.0" />
+                            </font></Label>
+                        <Button layoutX="436.0" layoutY="38.0" mnemonicParsing="false" onAction="#showPicture" prefHeight="100.0" prefWidth="200.0" text="Upload" textFill="#580bd3" textOverrun="WORD_ELLIPSIS">
+                            <font>
+                                <Font name="BM HANNA Air OTF" size="32.0" />
+                            </font></Button>
+                      <ImageView fx:id="view1" fitHeight="268.0" fitWidth="366.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+                    </children>
+                </Pane>
+                <Pane fx:id="pane2" layoutX="7.0" layoutY="509.0" prefHeight="133.0" prefWidth="713.0">
+               <children>
+                        <ImageView fx:id="view2" fitHeight="100.0" fitWidth="120.0" layoutX="508.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true" />
+               </children></Pane>
+                <HBox fx:id="hbox" layoutX="493.0" layoutY="428.0" prefHeight="100.0" prefWidth="135.0" />
+                  <Button layoutX="44.0" layoutY="492.0" mnemonicParsing="false" onAction="#theNextButton" onMouseClicked="#theNextButton" prefHeight="100.0" prefWidth="380.0" text="Edit" textFill="#840bc9">
+                      <font>
+                          <Font name="BM HANNA Pro OTF" size="35.0" />
+                      </font>
+                  </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
