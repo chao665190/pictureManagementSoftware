@@ -1,6 +1,6 @@
 # group-project-chao-ling
 
-This is the final project from Chao Wang （NUID:0021955685） and Li Ling(NUID:002196505).
+This is the final project from Chao Wang and Li Ling.
 
 
 This application is made by Javafx, the function that we made for this project is:
