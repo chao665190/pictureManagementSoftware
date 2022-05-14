@@ -3,6 +3,7 @@
 This project is from Chao Wang and Li Ling.
 
 
+
 This application is made by Javafx, the function that we made for this project is:
 
 1.Develop GUI to allow users to upload image from their own computer.
@@ -12,6 +13,7 @@ This application is made by Javafx, the function that we made for this project i
 3.Develop GUI to allow users convert the format of the image with the help of Image IO
 
 4.Develop GUI to allow users to download converted images.
+
 
 
 
